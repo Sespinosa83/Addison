@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="xdstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>XD Site</title>
+    
+    <script>
+        $(function() {
+            $(".toggle").on("click", function(){
+
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+            
+            else{
+                $(".item").addClass("active");
+            }
+            })
+        });
+    </script>
+
+</head>
+<body>
+        <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Addison</a></li>
+                <li class="item"><a href="#">contact</a></li>
+                <li class="item"><a href="#">about</a></li>
+                <li class="item"><a href="#">gallery</a></li>
+                <li class="item button secondary"><a href="#">Sign-up</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+        <header>
+    
+        <div class="masthead">
+        </div>
+    <div id="wrapper">
+        <div class="main-feature">
+            <div class="profile">
+                <h1>Hello Nice to see you here!</h1>
+                <p>Addison was born in Ecuador, raised in NYC and currently resides in the countryside north of the city. 
+                    In 2015 she started writing graffiti and soon was well known as the only female capable of 
+                    competing with the boys in the graffiti subculture. Addison has been painting subway trains for years.
+                    <li class="about-button-main"><a href="#">about me</a></li>
+                </p>
+            </div>
+            <img class="self" src="images/toa-heftiba450x450.png" alt="">
+        </div>
+            <hr>
+            <div class="background">
+            <li class="gallery-button-main"><a href="#">Gallery</a></li>
+            <div class="gallery-content">
+            <a href="#"> <img class="pic" src="images/sunyu-69wg9vWwPAU-unsplash@2x.png" alt="picture1"></a>
+            <a href="#"> <img class="pic" src="images/sunyu-1@2x.png" alt="picture2"></a>
+            <a href="#"> <img class="pic" src="images/sunyu-2@2x.png" alt="picture3"></a>
+            <a href="#"> <img class="pic" src="images/sunyu-3@2x.png" alt="picture4"></a>
+        </div>
+    </div>
+    </div>  
+    <footer id="footer_container">
+        <div class="row">
+            <div class="column">
+                <ul class="sitemap">
+                    <li><a class="item2" href="#">home</a></li>
+                    <li><a class="item2" href="#">about</a></li>
+                    <li><a class="item2" href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+               <ul class="social">
+                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               </ul>
+            </div>
+          </div>
+   </footer>     
+</body>
+</html>
